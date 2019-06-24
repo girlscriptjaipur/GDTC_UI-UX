@@ -10,7 +10,7 @@ on the web or the app wins the challenge. This challenge will run the whole mont
 
    1. Fork the repository and clone it to your PC.
 
-   2.  Put your code inside the cloned repository. in a folder with the name: `“<ParticipantName>:<DifficultyLevel>”` which should contain the source code and screenshots/screen captures.
+   2.  Put your code inside the cloned repository. in a folder with the name: `“<ChallengeNumber(1, 2, or 3)>:<ParticipantName>` which should contain the source code and screenshots/screen captures.
 
    3. Push it to your forked repository.
 
