@@ -1,0 +1,208 @@
+body,
+html {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg {
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.card {
+    display: flex;
+    width: 1278px;
+    height: 511px;
+    padding-top: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card .navbar .remain {
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: space-around; */
+    width: 90%;
+    margin-right: 8%;
+
+}
+
+.card>.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 60%;
+}
+
+#logo {
+    width: 30%;
+    height: 25%;
+    float: initial;
+    position: relative;
+    top: 5px;
+    right: 131%;
+}
+
+li {
+    margin-left: 24%;
+    width: 27%;
+    height: 11%;
+    float: initial;
+    position: relative;
+    top: 5px;
+    right: 131%;
+    font-family: 'Noto Sans', sans-serif;
+    list-style-type: none;
+    color: #163A48;
+    font-weight: 650;
+}
+
+h1 {
+    margin-top: 10px;
+    color: #E96266;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    margin-right: 10%;
+    display: block;
+    font-family: 'Noto Sans', sans-serif;
+    color: #163A48;
+    font-weight: 650;
+    width: max-content;
+}
+
+#remain {
+    height: 0px;
+}
+
+#dribble {
+    float: left;
+}
+
+#photo {
+    float: right;
+}
+
+#hello {
+    height: 50%;
+    width: 50%;
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    top: 27%;
+
+}
+
+.left {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 40px;
+    margin-top: 12px;
+}
+
+.left>a {
+    padding-left: 45px;
+    background: #E96266;
+    margin-left: -44px;
+    height: 25px;
+    width: 93px;
+    padding-bottom: 4px;
+    padding-top: 7px;
+    font-family: 'Noto sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    overflow: auto;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 13px;
+
+}
+
+
+.navbar-button {
+
+    list-style: none;
+    display: inline-flex;
+    margin-right: 30px;
+    margin-top: 12px;
+}
+
+.navbar-button>a {
+    padding-left: 25px;
+    background: #E96266;
+    margin-left: -31px;
+    height: 25px;
+    width: 93px;
+    padding-bottom: 4px;
+    padding-top: 7px;
+    font-family: 'Noto sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    overflow: auto;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 13px;
+    margin-top: -22%;
+    float: right;
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 1512px) {
+    .card {
+        width: 800px;
+        
+    }
+}
+
+/* kya samjh nhi aaraha upar media query waali css dekh and minimise karke dekh. Kuch nhi ho rha h */
+/* media queries ka syntax bhool gya hu */
+/* nhi karega kaam code galat manage yeh phele se half flex mai likha hai aur doosra half thik se nhi hai wait. maine flex use nhi kiya tha card ke contents ke loye to kya responsivenhi hoga?
+look sabse pheli baat yeh samjho ki without media query ke page ko responsive banao media query toh last option hota hai uske bina kaise banta h? float use karne padte hai aur bhari media query likhni padti hai 
+media queries ke wajeh se page slow hota hai
+mai thik kar doonga lekin phele kuch dependencies install karaha hu
+bhot boring environ*/
+/* are yeh bilkul bhi responsive nhi ban sakta. kyu? are har element place galat hua hai */
+/* to unpar bhi media query lagani padegi naa haa */
+
+/* such a pain in the ass bhot kaam hai isme tbhi kehta hu flexbox ya css grid use karo maine card ko 2 divs mei divide kiya tha left and right fir jaakar elements 
+daale h but submit to karna h by 29th.itna kaam karliya h last mei to nhi chod sakti. koi aur changes laga sakte h 
+jisse responsive banana easy ho?*/
+/* flexbox use karokaha kaha karu?*/ 
+/* .are jahan par images use ki hai */
+/* navbar thik hai, navbar mei jab bhi space de kar kuch likhu to niche shift ho rha h toh us element ki width badao. sabki same class h. waise
+karke dekha tha image bhi shift ho rhi thi saath mei*/
+/* yeh karlo aaj hi hojayega*/
+/*  sab samjh aajayega. */
+/* isko karlo 2-3 hours mai hojayega poora*/
+/* okay but tu flexbox waal property laga de jaha bhi tujhe lag rha h ki lagana chahiye kyuki uski wajah se baaki elements par 
+changes aa jayenge sab delete karna padega WHAT?? css mai kahi bhi flexbox nhi lag raha sab kuch scratch se karna hoga
+isme to bohot time lag jayega dekh le if you can baad mai karloo abhi kahi jana hai chal copy larle 6 bje karib 
+drag and drop are github par push kardo ok aur link mujhe bhej do whatsapp par okay*/
