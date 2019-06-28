@@ -1,0 +1,17 @@
+.card-body{
+    background: #FFF;
+    margin: 5em 3em;
+    border-radius: 2em;
+
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { 
+    .card-body{
+        margin: 0.5em 0.5em;
+    }
+}
