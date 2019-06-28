@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#UI-UX Challenge 1
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).There are individual React elements rendered on the page. The background is a basic JavaScript animation. The graphic part is simply a React element rendering a pure CSS animation. The whole page has been made responsive using media queries and bootstrap classes.
+
+Here's a live link for the project: http://abundant-jam.surge.sh/ 
 
 ## Available Scripts
 
