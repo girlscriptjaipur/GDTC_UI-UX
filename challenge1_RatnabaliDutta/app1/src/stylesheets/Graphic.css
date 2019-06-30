@@ -1,0 +1,178 @@
+.graphic{
+    margin: 4em;
+}
+.sun{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    border-radius: 100%;
+    background-color: #f2bc1c;
+}
+.message{
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px;
+    color: #FFF;
+    background-color: #E96266;
+    border-radius: 27px;
+    display:none;
+}
+.message::before{
+    border-top: 20px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.sun:hover{
+    cursor:pointer;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4), 0 0 0 10px #f2bc1c;
+}
+.sun:hover .message{
+    display:block;
+}
+.eye{  
+  background-color: #333;
+  animation: blink 2s linear infinite;
+}
+.eye1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  right: 80px;
+}
+.eye2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 80px;
+}
+.cloud1{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    animation: float2 4s ease-in-out infinite alternate;
+    z-index: 1;
+}
+.cloud2{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    animation: float1 4s ease-in-out infinite alternate;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:0;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #73BCCD;
+}
+.circle::before{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: -5px;
+    border-radius: 50%;
+    background-color: #73BCCD;
+}
+.circle::after{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #73BCCD;
+}
+.filler {
+  width: 140px;
+  height: 60px;
+  border-radius: 27px;
+  position: absolute;
+  top: 50px;
+  left: -25px;
+  background-color: #73BCCD;
+  box-shadow: inset 0 -5px #163A48;
+}
+/**Float 1 animation **/
+@keyframes float1 {
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(80px);
+    }
+}
+/**Float 2 animation **/
+@keyframes float2 {
+    from{
+        transform: translateX(-10px);
+    }
+    to{
+        transform: translateX(-80px);
+    }
+}
+/**Blinking eyes animation**/
+@keyframes blink {
+  0% {
+    transform: scaleY(0.1);
+  }
+  5% {
+    transform: scaleY(0.1);
+  }
+  5.1% {
+    transform: scaleY(1);
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .sun{
+        width: 220px;
+        height: 220px;
+    }
+    .eye1, .eye2{
+        width: 15px;
+        height: 15px;
+        top: 80px; 
+    }
+    .eye1{
+        right:50px;
+    }
+    .eye2{
+        left: 50px;
+    }
+    .circle{
+        width: 60px;
+        height: 60px;
+    }
+    .filler{
+        width: 100px;
+        height: 40px;
+        top: 35px;
+        left: -15px;
+    }
+    .cloud1{
+        top: 120px;
+        left: 280px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { }

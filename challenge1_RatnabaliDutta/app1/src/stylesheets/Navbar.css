@@ -1,0 +1,51 @@
+.navbar{
+    padding-top: 2em;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding-right: 2em;
+    color: black;
+    font-weight: bold;
+}
+.bg-light{
+    background-color: #FFFFFF !important;
+}
+.navbar-brand a {
+    color: #73bccd;
+    text-decoration: none;
+}
+.btn {
+  font-size: 13px;   
+  letter-spacing: 1px;
+  line-height: 15px;
+  border-radius: 40px;
+  background: rgba(233, 98, 102, 128);
+  transition: all 0.3s ease 0s;
+  color: white !important;
+  font-weight: bold;
+  padding: 12px 30px !important;
+}
+a.btn:hover{
+    color:black !important;
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+}
+ 
+@media all and (max-width: 480px) { 
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-brand a{
+        font-size: 0.6em;
+    }
+}
