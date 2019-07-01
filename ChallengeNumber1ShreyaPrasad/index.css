@@ -13,100 +13,129 @@ html {
     background-position: center;
     height: 100vh;
     width: 100vw;
+    position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-
 .card {
-    display: flex;
-    width: 1278px;
-    height: 511px;
-    padding-top: 40px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: 15px;
-    position: absolute;
-    top: 8%;
+    position: relative;
+    top: 50px;
     left: 4%;
+    width: 92%;
+    height: calc(100vh - 100px);
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.card .navbar .remain {
-    display: flex;
-    flex-wrap: nowrap;
-    /* justify-content: space-around; */
-    width: 90%;
-    margin-right: 8%;
 
-}
-
-.card>.navbar {
+.card .navbar {
+    margin-bottom: 30px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
     width: 100%;
-    margin-left: 60%;
 }
 
-#logo {
+
+.card .navbar .remain {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+   
+}
+
+.card .navbar .logo {
     width: 30%;
-    height: 25%;
-    float: initial;
-    position: relative;
-    top: 5px;
-    right: 131%;
+    height: auto;
 }
 
-li {
-    margin-left: 24%;
-    width: 27%;
-    height: 11%;
-    float: initial;
-    position: relative;
-    top: 5px;
-    right: 131%;
+.card .navbar .logo img {
+    margin: auto;
+    max-width: 90px;
+    height: auto;
+    margin: auto
+}
+
+.navbar-button>a {
+    background: #E96266;
+    height: 25px;
+    width: 93px;
+    font-family: 'Noto sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    overflow: auto;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 15px 20px;
+    border-radius: 13px;
+}
+
+.card .navbar li {
+    flex-grow: 1;
     font-family: 'Noto Sans', sans-serif;
     list-style-type: none;
     color: #163A48;
-    font-weight: 650;
+    font-weight: 800;
 }
 
-h1 {
+.flex {
+    display: flex;
+    align-items: center;
+    max-height: 65vh;
+    height: 100%;
+}
+
+#dribble {
+    padding-left: 30px;
+    flex-grow: 1;
+}
+
+
+#dribble h1 {
     margin-top: 10px;
+    font-size: 3rem;
     color: #E96266;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
 }
 
-p {
-    margin-right: 10%;
-    display: block;
+#dribble p {
     font-family: 'Noto Sans', sans-serif;
     color: #163A48;
     font-weight: 650;
-    width: max-content;
+    font-size: 1.2rem;
 }
 
-#remain {
-    height: 0px;
-}
-
-#dribble {
-    float: left;
-}
 
 #photo {
-    float: right;
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    height: 100%;
+    text-align: right;
+    margin-right: 40px;
 }
 
 #hello {
-    height: 50%;
-    width: 50%;
-    margin-left: 40%;
-    margin-bottom: 10px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.theme-button >a {
+    background: #E96266;
+    font-family: 'Noto sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    overflow: auto;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border-radius: 13px;
 }
 
 .button {
@@ -121,88 +150,120 @@ p {
 
 }
 
-.left {
-    list-style: none;
-    display: inline-flex;
-    margin-right: 40px;
-    margin-top: 12px;
-}
-
-.left>a {
-    padding-left: 45px;
-    background: #E96266;
-    margin-left: -44px;
-    height: 25px;
-    width: 93px;
-    padding-bottom: 4px;
-    padding-top: 7px;
-    font-family: 'Noto sans', sans-serif;
-    color: white;
-    text-decoration: none;
-    overflow: auto;
-    font-weight: 600;
-    font-size: 13px;
-    border-radius: 13px;
-
-}
-
-
-.navbar-button {
-
-    list-style: none;
-    display: inline-flex;
-    margin-right: 30px;
-    margin-top: 12px;
-}
-
-.navbar-button>a {
-    padding-left: 25px;
-    background: #E96266;
-    margin-left: -31px;
-    height: 25px;
-    width: 93px;
-    padding-bottom: 4px;
-    padding-top: 7px;
-    font-family: 'Noto sans', sans-serif;
-    color: white;
-    text-decoration: none;
-    overflow: auto;
-    font-weight: 600;
-    font-size: 13px;
-    border-radius: 13px;
-    margin-top: -22%;
-    float: right;
-
-}
-
-@media screen and (min-width: 720px) and (max-width: 1512px) {
-    .card {
-        width: 800px;
-        
+@media screen and (max-width: 720px){
+    .flex {
+        /* width: 800px; */
+        display: block;
+    }
+    .flex > div {
+        display: block;
+    }
+    #photo {
+        max-width: 100%;
+        padding: 30px;
+        text-align: center
     }
 }
 
-/* kya samjh nhi aaraha upar media query waali css dekh and minimise karke dekh. Kuch nhi ho rha h */
-/* media queries ka syntax bhool gya hu */
-/* nhi karega kaam code galat manage yeh phele se half flex mai likha hai aur doosra half thik se nhi hai wait. maine flex use nhi kiya tha card ke contents ke loye to kya responsivenhi hoga?
-look sabse pheli baat yeh samjho ki without media query ke page ko responsive banao media query toh last option hota hai uske bina kaise banta h? float use karne padte hai aur bhari media query likhni padti hai 
-media queries ke wajeh se page slow hota hai
-mai thik kar doonga lekin phele kuch dependencies install karaha hu
-bhot boring environ*/
-/* are yeh bilkul bhi responsive nhi ban sakta. kyu? are har element place galat hua hai */
-/* to unpar bhi media query lagani padegi naa haa */
+@media screen and (max-width: 972px)
+{
+    #dribble h1{
+        font-size: 2rem;
+    }
+}
 
-/* such a pain in the ass bhot kaam hai isme tbhi kehta hu flexbox ya css grid use karo maine card ko 2 divs mei divide kiya tha left and right fir jaakar elements 
-daale h but submit to karna h by 29th.itna kaam karliya h last mei to nhi chod sakti. koi aur changes laga sakte h 
-jisse responsive banana easy ho?*/
-/* flexbox use karokaha kaha karu?*/ 
-/* .are jahan par images use ki hai */
-/* navbar thik hai, navbar mei jab bhi space de kar kuch likhu to niche shift ho rha h toh us element ki width badao. sabki same class h. waise
-karke dekha tha image bhi shift ho rhi thi saath mei*/
-/* yeh karlo aaj hi hojayega*/
-/*  sab samjh aajayega. */
-/* isko karlo 2-3 hours mai hojayega poora*/
-/* okay but tu flexbox waal property laga de jaha bhi tujhe lag rha h ki lagana chahiye kyuki uski wajah se baaki elements par 
-changes aa jayenge sab delete karna padega WHAT?? css mai kahi bhi flexbox nhi lag raha sab kuch scratch se karna hoga
-isme to bohot time lag jayega dekh le if you can baad mai karloo abhi kahi jana hai chal copy larle 6 bje karib 
-drag and drop are github par push kardo ok aur link mujhe bhej do whatsapp par okay*/
+@media screen and (max-width: 730px)
+{
+    #dribble h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 730px)
+{
+    #dribble h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 720px)
+{
+#hello {
+    height: 158px;
+    width: 200px;
+    margin-right: -98px;
+    margin-top: -46%;
+}
+#dribble p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #163A48;
+    font-weight: 650;
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 700px)
+{
+#hello {
+    height: 158px;
+    width: 200px;
+    margin-right: -98px;
+    margin-top: -46%;
+}
+#dribble p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #163A48;
+    font-weight: 650;
+    font-size: 15px;
+}
+
+#dribble h1 {
+    font-size: 1.5rem;
+    margin-top: 21%;
+}
+}
+
+@media screen and (max-width: 640px)
+{
+#hello {
+    height: 158px;
+    width: 200px;
+    margin-right: -98px;
+    margin-top: -46%;
+}
+#dribble p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #163A48;
+    font-weight: 650;
+    font-size: 15px;
+    margin-left: -6%;
+    
+}
+
+#dribble h1 {
+    font-size: 1.5rem;
+    margin-top: 21%;
+    margin-left: -6%;
+}
+
+.card .navbar {
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    margin-left: -6%;
+}
+}
+
+@media screen and (max-width: 601px)
+{
+    .remain .navbar-button{
+        width: 9%;
+        margin-left: 2%;
+
+    }
+
+    .navbar-button>a {
+        font-size: 6px;
+        padding: 11px 2px;
+}
+}
