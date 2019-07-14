@@ -1,6 +1,6 @@
 ## UI-UX Challenge 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).The app has been specifically made for a mobile view although it supports all devices. Each component is a React element rendering.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).Each component is a React element rendering on the screen. React Router element has been used for the navigation.
 
 Here's a live link to the site: http://acrid-knee.surge.sh/
 
