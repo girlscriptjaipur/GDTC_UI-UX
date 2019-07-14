@@ -1,0 +1,16 @@
+.gallery{
+    margin-top: 2.5em;
+}
+.gallery-img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) { 
+}

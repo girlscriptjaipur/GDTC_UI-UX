@@ -1,0 +1,45 @@
+#exTab1 .tab-content {
+  color : #ccc;
+  background-color: #1d2637;
+  padding : 5px 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.nav-link {
+  border-radius: 0;
+  color: #1d2637;
+}
+.notif-img{
+  width: 2.5em;
+  height: 5vh;
+  border-radius: 10px;
+  float: left;
+  margin-right: 1.6em;
+}
+.notifs{
+    padding: 1.2em;
+    text-align: left;
+}
+.duration{
+    padding-left: 4em;
+    color: #ccc;
+}
+.details{
+    float: right;
+    display: inline-block;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
