@@ -1,0 +1,94 @@
+.col-4{
+    text-align: center;
+}
+.one, .two, .three {
+    display: inline-block;
+    width: 9em;
+    height: 8em;
+    border-radius: 10px;
+}
+.one{
+    background-color: #feac00;
+    cursor: pointer;
+}
+.one:hover{
+    background-color: #fea400;
+}
+.one .number{
+    text-align: left;
+    color: #fff;
+    font-size: 2.5em;
+    padding: 15px;
+    font-weight: bold;
+}
+.one .type{
+    margin-top: -40px;
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 1.2em;
+}
+.two:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+.two .number{
+    text-align: left;
+    color: #f05a49;
+    font-size: 2.5em;
+    padding: 15px;
+    font-weight: bold;
+}
+.two .type{
+    margin-top: -40px;
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 15px;
+    color: #4c4c5b;
+    font-size: 1.2em;
+}
+.three:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+.three .number{
+    text-align: left;
+    color: #837acc;
+    font-size: 2.5em;
+    padding: 15px;
+    font-weight: bold;
+}
+.three .type{
+    margin-top: -40px;
+    margin-bottom: 0rem;
+    text-align: left;
+    padding-left: 15px;
+    color: #4c4c5b;
+    font-size: 1.2em;
+}
+.status{
+    margin-bottom: 2em;
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+ 
+@media all and (max-width: 480px) {
+    .one, .two, .three{
+        width: 5em;
+        height: 4em;
+    }
+    .one .number, .two .number, .three .number {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    .one .type, .two .type, .three .type {
+        padding-left: 5px;
+        font-size: 0.8em;
+        margin-top: -20px;
+    }
+}
